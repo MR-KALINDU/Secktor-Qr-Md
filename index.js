@@ -41,7 +41,7 @@ app.get("/announcement", (req, res) => {
 let data = `{
  "announcement": true,
  "status": 200,
- "developers": "SamPandey001",
+ "developers": "MR-KALINDU",
  "version": 0.0.6,
  "maintained": true,
  "count":"1",
@@ -59,7 +59,7 @@ app.get("/test2", (req, res) => {
   res.send("All system are in optimal condition");
 });
 app.get("/repl", (req, res) => {
-res.redirect(301, 'https://replit.com/@SamPandey001/Secktor-Md'); //
+res.redirect(301, 'https://replit.com/@kalidugaweshana/MR-KALINDU-BOT'); //
 });
 app.get("/", (req, res) => {
   res.sendFile(__dirname+"/public/main.html");
@@ -103,12 +103,13 @@ app.get("/", (req, res) => {
  }, 20000)
           try{
           let data = await fs.readFileSync(__dirname+'/auth_info_baileys/creds.json','utf-8')
-         //  await session.sendMessage(session.user.id, {text: 'Secktor;;;'+btoa(data)});   
+         //  await session.sendMessage(session.user.id, {text: 'MR-KALINDU;;;'+btoa(data)});   
            await delay(800)
           const output = await axios.post('http://paste.c-net.org/',`${btoa(data)}`, {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }});
           let c = output.data.split('/')[3]
-           await session.sendMessage(session.user.id, {text: 'Secktor;;;'+c});	
-          let cc = `*Thanks for choosing Secktor-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making Secktor-bot_\n\nVisit secktorbot.me\n*1.Repo:* citel-x.herokuapp.com/repo\n*2.Koyeb:* citel-x.herokuapp.com/koyeb\n*3.Plugins:* citel-x.herokuapp.com/plugins\n*3.Heroku:* citel-x.herokuapp.com/heroku\nThanks`
+           await session.sendMessage(session.user.id, {text: 'MR-KALINDU;;;'+c});	
+          let cc = `
+🛸 *ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴄʜᴏᴏꜱɪɴɢ ᴍʀ-ᴋᴀʟɪɴᴅᴜ-ʙᴏᴛ* 🛸\n\n🍀 *Qʀ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴍʀ-ᴋᴀʟɪɴᴅᴜ*🍀\n\n🇱🇰 *ʏᴏᴜ ᴄᴏᴍᴘʟᴇᴀᴛᴇᴅ ꜰɪʀꜱᴛ ꜱᴛᴇᴘ ᴏꜰ ᴄʀᴇᴀᴛɪɴɢ ᴍʏ ʙᴏᴛ* 🇱🇰\n\n♨️ *ᴀꜱ ꜱᴏᴏɴ ᴀꜱ ʏᴏᴜ ꜱᴄᴀɴ ᴛʜᴇ Qʀ ᴄᴏᴅᴇ,ʏᴏᴜ ᴡɪʟʟ ʙᴇ ᴀᴅᴅᴇᴅ ᴛᴏ ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ. ᴘʟᴇᴀꜱᴇ ᴅᴏ ɴᴏᴛ ʟᴇᴀᴠᴇ ᴛʜᴇ ɢʀᴏᴜᴘ* ♨️\n\n🐝 *ᴅᴏɴ'ᴛ ꜱʜᴀʀᴇ ʏᴏᴜʀ ꜱᴇꜱꜱɪᴏɴ ɪᴅ. ᴏᴛʜᴇʀᴡɪꜱᴇ ᴄᴀɴ ᴀᴄᴄꜱᴇꜱ ʏᴏᴜ ᴀᴄᴄᴏᴜɴᴛ* 🐝\n\n🙄 *ᴅᴏɴᴛ ᴛʀʏ ᴄʀᴇᴀᴛᴇ Qʀ ꜰᴏʀ ᴜꜱɪɴɢ ᴍʏ ᴊᴀᴠᴀꜱᴄʀɪᴘᴛ ᴄᴏᴅᴇ* 🙄\n\n🐞 *ᴅᴇᴠᴇʟᴏᴘᴇʀ ɴᴜᴍʙᴇʀ* 🐞\n\n̸ͪ⫷_________________________⫸\n+94758179948\n⫷_________________________⫸`
           await session.sendMessage(session.user.id, {text: cc});
           } catch (e) {
             console.log(e)
